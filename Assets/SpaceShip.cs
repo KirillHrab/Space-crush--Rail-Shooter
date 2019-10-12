@@ -17,7 +17,7 @@ public class SpaceShip : MonoBehaviour
     //Поворот корабля в разных случаях
     [SerializeField] float positionPitchfactor = -1.25f;
     [SerializeField] float controlPitchfactor = -20f;
-    [SerializeField] float positionYawfactor = -1.36f;
+    [SerializeField] float positionYawfactor = 2.3f;
     [SerializeField] float controlRollfactor = -23.9f;
 
 
@@ -56,8 +56,8 @@ public class SpaceShip : MonoBehaviour
          xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
          yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
-        float xOffset = xThrow * xSpeed * Time.deltaTime;
-        float yOffset = yThrow * ySpeed * Time.deltaTime;
+        float xOffset = xThrow * xSpeed * Time.deltaTime; //смещение корабля по иксу 
+        float yOffset = yThrow * ySpeed * Time.deltaTime;//смещение корабля по игрику
 
         float rawXPos = transform.localPosition.x + xOffset;
         float rawYpos = transform.localPosition.y + yOffset;
