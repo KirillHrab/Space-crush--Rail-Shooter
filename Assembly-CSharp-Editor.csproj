@@ -60,7 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+    <Compile Include="Assets\Asset pack\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
+    <Compile Include="Assets\Asset pack\StarSparrow\Readme\Readme Files\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity from udemy/Repos/Unity2/Space crush -Rail Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -705,17 +711,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{05712F9A-B5CC-EBCD-735C-90258E66C572}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{8FD975D1-89FB-50EF-E1E3-1EABBF9C80F5}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{B87E213C-3C6B-4E44-4F9F-F7AF621C7774}</Project>
-      <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
