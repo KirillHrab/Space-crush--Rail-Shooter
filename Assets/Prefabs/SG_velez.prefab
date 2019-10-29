@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7966513110895448662}
   - component: {fileID: 7966513110894645878}
   - component: {fileID: 7966513110893678774}
+  - component: {fileID: 5325381265680853543}
   m_Layer: 0
   m_Name: SG_velez
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5325381265680853543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7966513110895677046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.373198, y: 4.1419005, z: 21.67}
+  m_Center: {x: -0.000030477479, y: 1.0762653, z: 0.26923892}

@@ -164,10 +164,11 @@
     <Compile Include="Assets\Asset pack\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Asset pack\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\Asset pack\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\CollisionHandler.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\SceneBuilder.cs" />
-    <Compile Include="Assets\Scripts\SpaceShip.cs" />
+    <Compile Include="Assets\Scripts\SpaceshipController.cs" />
     <None Include="Assets\Asset pack\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Asset pack\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\Asset pack\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
