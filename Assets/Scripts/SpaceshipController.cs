@@ -8,8 +8,8 @@ public class SpaceshipController : MonoBehaviour
 {
     //скорость передвежения корабля
     [Header("Speed")]
-    [Tooltip("In ms^-1")][SerializeField] float xSpeed = 40.29f;
-    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 22.1f;
+    [Tooltip("In ms^-1")][SerializeField] float Speed = 23f;
+    
 
     //рамки перемещения корабля по (х) оси
     [Header("Range")]
@@ -25,14 +25,22 @@ public class SpaceshipController : MonoBehaviour
 
     
     float xThrow, yThrow;
-
+    bool isControlEnabled = true;
    
     // Update is called once per frame
     void Update()
     {
-        shipTransform();
-        shipRotation();
+        if (isControlEnabled)
+        {
+            shipTransform();
+            shipRotation();
+        }
        
+    }
+    void OnPlayerDeath()
+    {
+        isControlEnabled = false;
+        print("Player freezed");
     }
 
     private void shipRotation()
@@ -54,8 +62,8 @@ public class SpaceshipController : MonoBehaviour
          xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
          yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
-        float xOffset = xThrow * xSpeed * Time.deltaTime; //смещение корабля по иксу 
-        float yOffset = yThrow * ySpeed * Time.deltaTime;//смещение корабля по игрику
+        float xOffset = xThrow * Speed * Time.deltaTime; //смещение корабля по иксу 
+        float yOffset = yThrow * Speed * Time.deltaTime;//смещение корабля по игрику
 
         float rawXPos = transform.localPosition.x + xOffset;
         float rawYpos = transform.localPosition.y + yOffset;
