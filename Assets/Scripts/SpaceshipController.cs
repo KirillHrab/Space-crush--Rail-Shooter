@@ -37,6 +37,7 @@ public class SpaceshipController : MonoBehaviour
         }
        
     }
+    
     void OnPlayerDeath()
     {
         isControlEnabled = false;
