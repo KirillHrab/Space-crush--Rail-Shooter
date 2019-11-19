@@ -159,7 +159,8 @@
      <Compile Include="Assets\Asset pack\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
      <Compile Include="Assets\Asset pack\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
      <Compile Include="Assets\Asset pack\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
-     <Compile Include="Assets\menu\NewBehaviourScript.cs" />
+     <Compile Include="Assets\menu\Scripts\go_to_scena.cs" />
+     <Compile Include="Assets\menu\Scripts\RotateObject.cs" />
      <Compile Include="Assets\menu\UTech\MG-Karting\BasicAssets\Scripts\KartSystems\Inputs\GamepadInput.cs" />
      <Compile Include="Assets\menu\UTech\MG-Karting\BasicAssets\Scripts\KartSystems\Inputs\IInput.cs" />
      <Compile Include="Assets\menu\UTech\MG-Karting\BasicAssets\Scripts\KartSystems\Inputs\KeyboardInput.cs" />
